@@ -11,9 +11,11 @@ add_executable(clion_opencv_app main.cpp)
 ADD_EXECUTABLE( sample1 ./basic/sample1.cpp )
 ADD_EXECUTABLE( sample2 ./basic/sample2.cpp )
 ADD_EXECUTABLE( sample3 ./basic/sample3.cpp )
+ADD_EXECUTABLE( main ./basic/main.cpp )
 
 
 target_link_libraries(clion_opencv_app ${OpenCV_LIBS})
 TARGET_LINK_LIBRARIES( sample1 ${OpenCV_LIBS} )
 TARGET_LINK_LIBRARIES( sample2 ${OpenCV_LIBS} )
 TARGET_LINK_LIBRARIES( sample3 ${OpenCV_LIBS} )
+TARGET_LINK_LIBRARIES( main ${OpenCV_LIBS} )
