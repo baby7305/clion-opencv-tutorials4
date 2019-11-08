@@ -8,6 +8,8 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(clion_opencv_app main.cpp)
+ADD_EXECUTABLE( main ./gui/main.cpp )
 
 
 target_link_libraries(clion_opencv_app ${OpenCV_LIBS})
+TARGET_LINK_LIBRARIES( main ${OpenCV_LIBS} )
